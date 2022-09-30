@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge | Encriptador de Texto</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Externa - Inter - Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html"><img class="logo" src="img/Logo.png" alt="Logo de Alura"></a></h1>
+    </header>
+    <main class="container">
+        <section class="container-primary">
+            <textarea class="ingresar" name="ingresar" id="ingresar" cols="42" rows="7"
+                placeholder="Ingrese su texto aquí.." onkeyup="this.value=NumText(this.value)"
+                onkeyup="this.value=NumText(this.value)"></textarea>
+            <div class="aviso">
+                <span>
+                    <img src="img/Vector.png" alt="Simbolo de admiración"> 
+                    Solo letras minúsculas y sin acentos
+                </span>
+            </div>
+            <div class="container-btn">
+                <button class="btn1" type="button" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn2" type="button" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="container-resultado">
+            <div>
+                <textarea class="resultado" name="resultado" id="resultado" cols="24" rows="11" readonly></textarea>
+                <div class="mensaje">
+                    <p class="texto2">Ningún mensaje fue encontrado</p>
+                    <p class="texto3">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button class="btn3" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <p>Hecho por <span><b>Luis Felipe Ramos</b> / Mexicano / luisfediana@gmail.com / 2022</span></p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
+
+</body>
+
+</html>
